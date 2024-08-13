@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(234, 146, 218);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #f2f2f2;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            color: black;
+            padding: 10px;
+        }
+
+        #main {
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+
+        /* Header */
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px 20px;
+        }
+
+        .facilities-title {
+            background-color: #1a2b44;
+            color: #fff;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .facilities-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .facilities-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .facilities-list ul li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Images Grid */
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .images-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.jpg" alt="RV University Logo" style="margin-right: 1050px;">
+        
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admission.html">Admission</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="events.html">Events</a>
+        <a href="location.html">Location</a>
+    </div>
+
+    <!-- Menu Icon for Sidebar -->
+    <span class="menu-icon" onclick="openNav()">&#9776;Menu</span>
+
+    
+    <div class="content">
+        <!-- Campus Facilities Title -->
+        <div class="facilities-title">
+            Campus Facilities
+        </div>
+
+        <!-- Row with List and Images Side by Side -->
+        <div class="row">
+            <!-- Facilities List -->
+            <div class="col-md-4">
+                <div class="facilities-list">
+                    <ul>
+                        <li>Metro connectivity at doorstep</li>
+                        <li>Library</li>
+                        <li>Auditorium</li>
+                        <li>Gymnasium</li>
+                        <li>Bank</li>
+                        <li>Post office</li>
+                        <li>Food court</li>
+                        <li>Dining Hall</li>
+                        <li>Medical Centre</li>
+                        <li>Counselling Centre</li>
+                        <li>Recreational centre</li>
+                        <li>Sports facilities & sports grounds</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Images Grid -->
+            <div class="col-md-8">
+                <div class="images-grid">
+                    <img src="1.jpg" alt="Image 1">
+                    <img src="2.jpg" alt="Image 2">
+                    <img src="3.jpg" alt="Image 3">
+                    <img src="4.jpg" alt="Image 4">
+                    <img src="5.jpg" alt="Image 5">
+                    <img src="6.jpg" alt="Image 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Sidebar -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

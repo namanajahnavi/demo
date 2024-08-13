@@ -1,0 +1,161 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - RV University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header img {
+            height: 80px;
+        }
+
+        .event-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .event-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .event-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .event-card h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .event-card .event-date, .event-card .event-time, .event-card .event-location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .event-card .event-date i, .event-card .event-time i, .event-card .event-location i {
+            margin-right: 10px;
+        }
+
+        .event-card button {
+            background-color: #d7a43c;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .event-card button:hover {
+            background-color: #b5892d;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="logo.jpg" alt="RV University Logo" style="margin-right: 1050px;">
+        <h1>Events</h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="admission.html">Admission</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="events.html">Events</a>
+    <a href="location.html">Location</a>
+    </div>
+  
+    <span class="menu-icon" onclick="openNav()">&#9776;Menu</span>
+
+
+    <div class="event-container">
+        <div class="event-card">
+            <img src="hack.jpg" alt="hackathon">
+            <h3> Hackathon </h3>
+            <p class="event-date"><i class="bi bi-calendar"></i> 9 to 12 July 2024</p>
+            <p class="event-time"><i class="bi bi-clock"></i> 9:00 am onwards</p>
+            <p class="event-location"><i class="bi bi-geo-alt"></i> Online</p>
+            <button>Register</button>
+            <button>View Details</button>
+        </div>
+
+        <div class="event-card">
+            <img src="carrer.jpg" alt="Event Image">
+            <h3>Carrer Guidance Workshop</h3>
+            <p class="event-date"><i class="bi bi-calendar"></i> 5th April 2024</p>
+            <p class="event-time"><i class="bi bi-clock"></i> 11:30 am - 1:00 pm</p>
+            <p class="event-location"><i class="bi bi-geo-alt"></i> SDI Block, RV University</p>
+            <button>Register</button>
+            <button>View Details</button>
+        </div>
+
+        <div class="event-card">
+            <img src="law.jpg" alt="Event Image">
+            <h3>Special Criminal Laws in the Indian Legal System</h3>
+            <p class="event-date"><i class="bi bi-calendar"></i> 24th April 2024</p>
+            <p class="event-time"><i class="bi bi-clock"></i> 11:30 am - 12:30 pm</p>
+            <p class="event-location"><i class="bi bi-geo-alt"></i> Biotech Seminar Hall, RV University</p>
+            <button>Register</button>
+            <button>View Details</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
